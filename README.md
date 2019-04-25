@@ -1,5 +1,6 @@
 # GDELT
-Global Database of Events, Language, and Tone (GDELT) 
+
+The Global Database of Events, Language, and Tone (GDELT) Event dataset which uses Google BigQuery contains a rich set of fields to describe an event that has caught media attention  http://arpieb.com/2018/06/20/digging-into-the-gdelt-event-schema/  
 
 ## Database
 GDELT 2.0 in Google BigQuery: [Events](https://bigquery.cloud.google.com/table/gdelt-bq:gdeltv2.events) | [Global Knowledge Graph](https://bigquery.cloud.google.com/table/gdelt-bq:gdeltv2.gkg)| [API](https://blog.gdeltproject.org/gdelt-geo-2-0-api-debuts/)
