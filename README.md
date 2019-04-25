@@ -1,7 +1,12 @@
 # gdelt-gtm
 GDELT GTM
 
-### SQL Query that Works
+### SQL Query 
+
+-- This uses source as GTM meaning Guatemala. Replace it with whatever source country you want to use.
+
+-- Run the query on Google's big query platform: https://bigquery.cloud.google.com/table/gdelt-bq:full.events?pli=1
+
 ~~~
 SELECT Actor1CountryCode country, PARSE_UTC_USEC(STRING(SQLDATE)) date, COUNT(*) c
 FROM [gdelt-bq:full.events]
