@@ -1,5 +1,5 @@
-# gdelt-gtm
-GDELT GTM
+# GDELT
+Global Database of Events, Language, and Tone (GDELT) 
 
 ### SQL Query 
 
