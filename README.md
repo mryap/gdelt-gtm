@@ -1,6 +1,9 @@
 # GDELT
 Global Database of Events, Language, and Tone (GDELT) 
 
+## Database
+GDELT 2.0 in Google BigQuery: [Events](https://bigquery.cloud.google.com/table/gdelt-bq:gdeltv2.events) | [Global Knowledge Graph](https://bigquery.cloud.google.com/table/gdelt-bq:gdeltv2.gkg)| 
+
 ### SQL Query 
 
 -- This uses source as GTM meaning Guatemala. Replace it with whatever source country you want to use.
