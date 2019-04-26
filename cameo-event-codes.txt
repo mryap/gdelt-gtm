@@ -1,5 +1,7 @@
 ### CAMEO Event Codes 
 
+Source: http://data.gdeltproject.org/documentation/CAMEO.Manual.1.1b3.pdf
+
 14: PROTEST
  140: Engage in political dissent, not specified below
  
