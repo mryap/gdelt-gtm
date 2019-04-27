@@ -14,3 +14,4 @@ BETWEEN
 TIMESTAMP(“20160101”)
  AND TIMESTAMP(“20160131”)
 ~~~
+See also https://cloud.google.com/bigquery/docs/querying-partitioned-tables
