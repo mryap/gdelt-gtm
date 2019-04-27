@@ -8,6 +8,8 @@ GROUP BY 1, 2
 ~~~
 
 ### Partioned Table
+
+Table Partitioning
 ~~~
 SELECT …
 FROM sales
@@ -16,4 +18,4 @@ BETWEEN
 TIMESTAMP(“20160101”)
  AND TIMESTAMP(“20160131”)
 ~~~
-See also https://cloud.google.com/bigquery/docs/querying-partitioned-tables
+See also https://cloud.google.com/bigquery/docs/querying-partitioned-tables | http://yowconference.com.au/slides/yowdata2016/Caif-BigQuery.pdf
