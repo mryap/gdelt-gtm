@@ -9,6 +9,8 @@ GROUP BY 1, 2
 
 ### Partioned Table
 ~~~
+SELECT …
+FROM sales
 WHERE _PARTITIONTIME
 BETWEEN
 TIMESTAMP(“20160101”)
