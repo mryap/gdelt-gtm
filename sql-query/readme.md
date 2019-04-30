@@ -1,6 +1,6 @@
 ### Sql Queries that Work
 
-Count the number of events that occurred in GTM that are hostile with Ethnic Code
+Count the number of events that occurred in GTM that are hostile with Ethnic Code [Saved Query Link](https://bigquery.cloud.google.com/savedquery/955477384685:87007a0dfe024cf59618f0f89931ec2c)
 ~~~
 SELECT
   Actor1CountryCode,
@@ -30,7 +30,7 @@ ORDER BY
 
 
 
-Count the number of events that occurred in GTM that are hostile
+Count the number of events that occurred in GTM that are hostile [Saved Query Link](https://bigquery.cloud.google.com/savedquery/955477384685:79fa75e784f049b79538bfa22645856a)
 ~~~
 SELECT
   Actor1CountryCode,
@@ -53,7 +53,7 @@ GROUP BY
 ORDER BY
   MonthYear DESC
 ~~~  
-[Saved Query Link](https://bigquery.cloud.google.com/savedquery/955477384685:79fa75e784f049b79538bfa22645856a)
+
 
 
 ### Draft Code
