@@ -16,9 +16,10 @@ WHERE
     )
   AND (Actor1CountryCode == "GTM")
   AND (Actor1Code == "civilians")
+  AND (Actor1Code == "mnc")
   AND (Actor1EthnicCode =="mya")
   AND (Actor1EthnicCode =="xnc")
-  AND (MonthYear > 201401)
+  AND (MonthYear > 201401 and MonthYear < 201812)
 GROUP BY
   MonthYear,
   Actor1CountryCode
