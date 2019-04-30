@@ -1,5 +1,6 @@
 ### Sql Queries that Work
 
+Count the number of events that occurred in GTM that are hostile
 ~~~
 SELECT
   Actor1CountryCode,
@@ -22,6 +23,8 @@ GROUP BY
 ORDER BY
   MonthYear DESC
 ~~~  
+[Saved Query Link](https://bigquery.cloud.google.com/savedquery/955477384685:79fa75e784f049b79538bfa22645856a)
+
 
 ### Draft Code
 ~~~
