@@ -1,5 +1,35 @@
 ### Sql Queries that Work
 
+Count the number of events that occurred in GTM that are hostile with Ethnic Code
+~~~
+SELECT
+  Actor1CountryCode,
+  MonthYear,
+  COUNT(GLOBALEVENTID) AS count
+FROM
+  [gdelt-bq:full.events]
+WHERE
+  (EventRootCode == "01" #MAKE PUBLIC STATEMENT
+    OR EventRootCode == "10" #DEMAND
+    OR EventRootCode == "14" #PROTEST
+    OR QuadClass =4
+    )
+  AND (Actor1CountryCode == "GTM")
+  AND (Actor1Code == "civilians")
+  AND (Actor1EthnicCode =="mya")
+  AND (Actor1EthnicCode =="xnc")
+  AND (MonthYear > 201401)
+GROUP BY
+  MonthYear,
+  Actor1CountryCode
+ORDER BY
+  MonthYear DESC
+
+
+~~~
+
+
+
 Count the number of events that occurred in GTM that are hostile
 ~~~
 SELECT
