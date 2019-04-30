@@ -55,7 +55,8 @@ ORDER BY
   MonthYear DESC
 ~~~  
 
-
+### Sql query (error)
+https://bigquery.cloud.google.com/savedquery/955477384685:6b7fe55cdbde4df2a4402669a3d82a66
 
 ### Draft Code
 ~~~
