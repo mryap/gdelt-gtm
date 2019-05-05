@@ -48,3 +48,32 @@ WHERE
 Both the Event dataset and the Global Knowledge Graph set and the API set
 
 [Query Links](https://bigquery.cloud.google.com/savedquery/955477384685:67145645350b49bf8451932dc5c4876f)
+
+###
+
+~~~
+SELECT
+  Actor1Code,
+  MonthYear,
+  COUNT(GLOBALEVENTID) AS count
+FROM
+  [gdelt-bq:full.events_partitioned]   
+WHERE
+  (EventRootCode == "03"
+    OR EventRootCode == "04"
+    OR EventRootCode == "05"
+    OR EventRootCode == "06")
+  AND (Actor1Code == "NAM"
+    OR Actor1Code == "MEA"
+    OR Actor1Code == "CAS"
+    OR Actor1Code == "SEA"
+    OR Actor1Code == "AFR"
+    OR Actor1Code == "ASA"
+    OR Actor1Code == "EUR")
+  AND (MonthYear > 201312)
+GROUP BY
+  MonthYear,
+  Actor1Code
+ORDER BY
+  MonthYear DESC
+~~~
