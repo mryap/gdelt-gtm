@@ -43,3 +43,6 @@ WHERE
   AND DATE<=20181231999999
   AND V2Locations LIKE '%guatemala%'
  ~~~ 
+
+### FINAL Combin Events Eventmentions gkg
+[Query Links](https://bigquery.cloud.google.com/savedquery/955477384685:67145645350b49bf8451932dc5c4876f)
