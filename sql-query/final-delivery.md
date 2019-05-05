@@ -45,4 +45,6 @@ WHERE
  ~~~ 
 
 ### FINAL Combin Events Eventmentions gkg
+Both the Event dataset and the Global Knowledge Graph set and the API set
+
 [Query Links](https://bigquery.cloud.google.com/savedquery/955477384685:67145645350b49bf8451932dc5c4876f)
