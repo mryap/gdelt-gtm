@@ -77,3 +77,29 @@ GROUP BY
 ORDER BY
   MonthYear DESC
 ~~~
+
+~~~
+SELECT STRING(a.SQLDATE) day, COUNT(1)/MIN(totc) cnt
+FROM [gdelt-bq:gdeltv2.events] a
+JOIN EACH (
+ SELECT COUNT(*) totc, SQLDATE
+ FROM [gdelt-bq:gdeltv2.events]
+ WHERE SQLDATE>=20150401 and SQLDATE<=20150430 and ActionGeo_CountryCode='IZ'
+ GROUP BY 2
+) b
+ON a.SQLDATE=b.SQLDATE
+WHERE GLOBALEVENTID IN (
+ SELECT GLOBALEVENTID 
+ FROM [gdelt-bq:gdeltv2.eventmentions] 
+ WHERE MentionIdentifier IN (
+ SELECT DocumentIdentifier 
+ FROM [gdelt-bq:gdeltv2.gkg] 
+ WHERE V2Themes CONTAINS 'PROTEST' AND DATE>=20150401000000 and DATE<=20150430999999 AND V2Locations like '%Iraq%'
+ )
+ GROUP BY GLOBALEVENTID
+) 
+AND a.SQLDATE>20150401 
+AND QuadClass=4
+GROUP BY day
+ORDER BY day
+~~~
