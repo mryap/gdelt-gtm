@@ -78,6 +78,7 @@ ORDER BY
   MonthYear DESC
 ~~~
 
+### Combine Events EventMentions GKG Iraq
 ~~~
 SELECT STRING(a.SQLDATE) day, COUNT(1)/MIN(totc) cnt
 FROM [gdelt-bq:gdeltv2.events] a
